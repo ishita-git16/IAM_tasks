@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IAM Pune</title>
+    <link rel="stylesheet" href="/form.css">
+
+    <script>
+        function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+        alert("Login ID must be filled out");
+        return false;
+        }
+
+        // let x = document.forms["myForm"]["fpass"].value;
+        // if (x == "") {
+        // alert("Password must be filled out");
+        // return false;
+        // }
+    }
+    </script>
+</head>
+<body>
+    <img src="/img2/logo.png" width="102" height="73" alt="IAM logo">
+    <div class="circle">
+        <div class = "icon">
+            </div>
+    </div>
+
+    <div class="Login">
+        
+        <form name = "myForm" action="/action_page.php" onsubmit="return validateForm()" method ="POST">
+            <div class="m1">
+            <label for="Login ID" id ="login">Login ID</label><br>
+            <input type="text" placeholder="Enter Your Login ID"  id="loginid" name="fname"><br>
+            <label for="password" id="password">Password</label><br>
+            <input type="password" placeholder="Enter Your Password" id="pass" name="fpass">
+            <br> 
+            <input type="submit" id="submit">
+            </div>
+          </form>
+    </div>
+</body>
+</html>

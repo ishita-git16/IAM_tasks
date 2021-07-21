@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IAM Pune</title>
+    <link rel="stylesheet" href="/form.css">
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+    <script>
+       const login = document.getElementById('loginid')
+    const password = document.getElementById('pass')
+    const form = document.getElementById('form')
+    const errorElement = document.getElementById('error')
+function validate(){
+form.addEventListener('submit', (e) => {
+    let messages = []
+    if (login.value === '' || login.value == null){
+        messages.push('Login ID is required')
+    }
+
+    if (password.value.length <=6){
+        messages.push('Password must be longer than 6 characters')
+    }
+
+    if(password.value.length >=20){
+        messages.push('Password must be less than 20 characters')
+    }
+
+    if(password.value === 'password'){
+        messages.push('Password cannot be password')
+    }
+
+    if (messages.length > 0){
+        e.preventDefault()
+        errorElement.innerText = messages.join(', ')
+    }
+})
+}
+    </script>
+</head>
+<body>
+    <img src="/img2/logo.png" width="102" height="73" alt="IAM logo">
+    <!-- <h1>Energy Interface</h1>
+    <h2>Dashboard</h2>
+    <p>Login Form</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium officiis autem aliquid hic architecto molestiae ab nam repudiandae rerum. Beatae atque vel dolor quas consequuntur dolores hic delectus ex non!</p> -->
+    <!-- <a href="https://smartiam.in/management"> IAM Website </a>
+    <br>
+    <a href="/desc.html">Read more</a> --> 
+    <div class="circle">
+        <div class = "icon">
+             <!-- <img src="" alt="" height="127.75px" width = "125px"> -->
+            </div>
+    </div>
+
+    <!-- <img src="/images/ac.png" width="200" height="200" alt="IAM logo" style="background-color: black;margin-left: 20px; flex-direction: row; margin-top: 90px;">
+    <img src="/images/ac2.png" width="200" height="200" alt="IAM logo">
+    <img src="/images/bulb.png" width="200" height="200" alt="IAM logo">
+    <img src="/images/fan.png" width="200" height="200" alt="IAM logo">
+    <img src="/images/tubelight.png" width="200" height="200" alt="IAM logo"> -->
+    <!-- <div id="error"></div> -->
+    <div class="Login">
+        
+        <form name = "myForm" onsubmit="validate()" method ="GET">
+            <div class="m1">
+            <label for="Login ID" id ="login">Login ID</label><br>
+            <input type="text" placeholder="Enter Your Login ID"  id="loginid" name="fname"><br>
+            <label for="password" id="password">Password</label><br>
+            <input type="password" placeholder="Enter Your Password" id="pass" name="pass">
+            <br>
+            <input type="submit" id="submit">
+            </div>
+          </form>
+    </div>
+</body>
+</html>
+    <!-- <ul class='circle-container'>
+        <li id="img"><img src='/fan.png'></li>
+        <li id="img"><img src='/air-conditioner.png'></li>
+        <li id="img"><img src='/icons8-tube-50.png'></li>
+        <li id="img"><img src='/laptop.png'></li>
+        <li id="img"><img src='/light-bulb.png'></li>
+        <li id="img"><img src='/air-conditioning.png'></li>
+        <li id="img"><img src='/big-electric-fan.png'></li>
+        <li id="img"><img src='/light-bulb.png'></li>
+      </ul> -->
