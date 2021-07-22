@@ -8,25 +8,50 @@ body {
 .Login{
     background-color: #F24A46;
     margin-top: 1px;
-    margin-bottom: 400px;
-    margin-right: 150px;
-    margin-left: 450px;
+    margin-bottom : 400px;
+    margin-right: 150px; 
+    margin-left: 150px; 
+    /* margin-left: 450px;
+    margin : 50%;
     width: 580px;
     height: 442px;
-    display :inline-flex;
+    display :inline-flex; */
 }
+
+#logo{
+    margin-top : 200px;
+    max-width: 50%;
+    margin-left: 300px; 
+    margin-bottom: 10px;
+    
+} 
+
+
 .m1{
     /* margin-left: auto; */
-    align-items: center;
+    /* position: relative; */
+    /* align-items: center; */
     /* background-color: #FFFFFF; */
     width: 300px;
     /* border: 15px solid green; */
     padding: 50px;
     /* margin: 50px; */
     font-size: 45px;
-    margin-left: 85px;
-    margin-top: 45px;
+    /* margin-left: 85px;
+    margin-top: 45px; */
+    /* margin: 10%; */
+    
 }
+
+.main{
+    display: block; 
+    position: fixed; 
+    align-items: center;
+    margin-left: 390px;
+ }
+
+
+
 
 #loginid{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -58,3 +83,32 @@ body {
     margin-left: 90px; 
     color: white;           
 }
+
+@media(min-width: 1280px){
+    
+    /* .Login{
+        width: auto;
+        height: auto;
+        margin: 50%;
+    }
+    
+    .m1{
+        width: auto;
+        margin: auto;
+    } */
+ 
+    }
+
+
+@media(min-width: 760px) and (max-width: 1024px){
+    
+
+    }
+
+
+
+@media(max-width: 360px){
+   
+    }
+
+    
